@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"fangzhi.site","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="方志">
+<meta property="og:url" content="https://fangzhi.site/index.html">
+<meta property="og:site_name" content="方志">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="方志">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://fangzhi.site/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>方志</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css" />
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">方志</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+    <a target="_blank" rel="noopener" href="https://github.com/arspi" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fangzhi.site/e0e385e2a73e.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar2.png">
+      <meta itemprop="name" content="方志">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="方志">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/e0e385e2a73e.html" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-11-26 18:53:08" itemprop="dateCreated datePublished" datetime="2022-11-26T18:53:08+08:00">2022-11-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-12 18:38:08" itemprop="dateModified" datetime="2022-11-12T18:38:08+08:00">2022-11-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fangzhi.site/1adef591a12f.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar2.png">
+      <meta itemprop="name" content="方志">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="方志">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/1adef591a12f.html" class="post-title-link" itemprop="url">vscode中调试python程序：launch.json文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-11-19 21:53:48" itemprop="dateCreated datePublished" datetime="2022-11-19T21:53:48+08:00">2022-11-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-25 19:22:49" itemprop="dateModified" datetime="2022-11-25T19:22:49+08:00">2022-11-25</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>当我们使用vscode登录远程服务器时，总会遇到一个问题，python程序难以像Pycharm那样方便地进行调试，只能使用print大法查看中间变量值。但其实vscode已经提供了调试python程序的方法，那就是launch.json文件。</p>
+<p>打开vscode，在上方菜单栏中选择“运行 - 添加配置”，就能够打开launch.json文件，设置调试参数，如下方格式所示。<code>version</code>代表json文件的版本号，不需要理会；<code>configurations</code>代表具体的调试配置项。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    configurations<span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="comment">// something</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="comment">// something</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>下面来看看具体的调试配置项如何编写。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 运行程序时使用的命令行</span><br><span class="line">CUDA_VISIBLE_DEVICES=<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span> python example.py --config example_config.txt --<span class="built_in">dir</span> example_dir --data example_data.csv</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 对应的配置项</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="comment">// 这个配置项的名称，用于辨识，对调试过程无影响</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;someName&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 配置类型，因为需要调试python程序，所以固定设置为&quot;python&quot;</span></span><br><span class="line">    <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;python&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 参数可选&quot;launch&quot;和&quot;attach&quot;，默认&quot;launch&quot;即可</span></span><br><span class="line">    <span class="attr">&quot;request&quot;</span><span class="punctuation">:</span> <span class="string">&quot;launch&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// python需要启动的程序，例如&quot;/home/someone/example.py&quot;，注意需要使用完整的绝对路径</span></span><br><span class="line">    <span class="attr">&quot;program&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/home/someone/example.py&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 参数可选&quot;integratedTerminal&quot;、&quot;internalTerminal&quot;和&quot;externalTerminal&quot;，默认选择&quot;intergratedTerminal&quot;即可</span></span><br><span class="line">    <span class="comment">// integratedTerminal: 输出内容会在vscode底部的“终端”中显示</span></span><br><span class="line">    <span class="comment">// internalTerminal: 输出内容会在vscode底部的“调试控制台”中显示</span></span><br><span class="line">    <span class="comment">// externalTerminal: vscode会弹出cmd窗口，输出内容在窗口中显示</span></span><br><span class="line">    <span class="attr">&quot;console&quot;</span><span class="punctuation">:</span> <span class="string">&quot;integratedTerminal&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 选择哪个环境下的python来启动程序，注意需要使用完整的绝对路径，不添加此项则使用默认python环境</span></span><br><span class="line">    <span class="attr">&quot;python&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/home/someone/anaconda3/envs/someEnv/bin/python&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 是否仅调试自己的代码（而不调试库文件）</span></span><br><span class="line">    <span class="attr">&quot;justMyCode&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 调试时携带的命令行参数，将命令行参数按照空格拆分开放入列表中即可，注意所有的文件名和文件夹名都需要使用完整的绝对路径</span></span><br><span class="line">    <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;--config&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;/home/someone/example_config.txt&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;--dir&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;/home/someone/example_dir&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;--data&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;/home/someone/example_data.csv&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 调试时需要携带的环境变量信息</span></span><br><span class="line">    <span class="attr">&quot;env&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    	<span class="attr">&quot;CUDA_VISIBLE_DEVICES&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0,1,2,3&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>还需要注意的是，在调试环境下，所有的文件名和文件夹名都需要使用完整的绝对路径，否则将会报错：文件/文件夹未找到/无法打开。</p>
+<p>当需要运行分布式程序时，可能会使用到形如下述命令行。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m torch.distributed.launch --nproc_per_node <span class="number">8</span> train.py</span><br></pre></td></tr></table></figure>
+<p>这时需要将”program”项更换为” torch/distributed/launch.py “的绝对路径，不需要”python”项，如下。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;someName&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;python&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;request&quot;</span><span class="punctuation">:</span> <span class="string">&quot;launch&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;program&quot;</span><span class="punctuation">:</span> <span class="string">&quot;/home/someone/anaconda3/envs/someEnv/lib/python3.7/site-packages/torch/distributed/launch.py&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;console&quot;</span><span class="punctuation">:</span> <span class="string">&quot;integratedTerminal&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;justMyCode&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;--nproc_per_node&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;8&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;train.py&quot;</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fangzhi.site/7a6f0f31d6fa.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar2.png">
+      <meta itemprop="name" content="方志">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="方志">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/7a6f0f31d6fa.html" class="post-title-link" itemprop="url">Weierstrass逼近定理证明</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-11-17 10:56:46" itemprop="dateCreated datePublished" datetime="2022-11-17T10:56:46+08:00">2022-11-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-18 15:34:46" itemprop="dateModified" datetime="2022-11-18T15:34:46+08:00">2022-11-18</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Weierstrass逼近定理：闭区间上的连续函数可被多项式逼近，使用数学语言叙述如下。</p>
+<p>对于在闭区间$[a,b]$上连续的$f(x)$，有</p>
+<script type="math/tex; mode=display">
+\forall \varepsilon > 0, \exists P(x),s.t.||f(x)-P(x)||_{\infty}<\varepsilon</script><p>其中$||f(x) - P(x)||_{\infty} = \max_{a \leq x \leq b}{|f(x) - P(x)|}$</p>
+<p>显然，“$f(x)$可被多项式逼近”与“存在多项式序列一致收敛到$f(x)$”互为充分必要条件，后者叙述如下。</p>
+<script type="math/tex; mode=display">
+\forall \varepsilon > 0, \exists \{P_n(x)\},N,\forall n > N, ||f(x)-P_n(x)||_{\infty}<\varepsilon</script><blockquote>
+<p>这里补充一致收敛的定义：</p>
+<script type="math/tex; mode=display">
+f_n(x) \rightrightarrows f(x) \Longleftrightarrow \forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n > N, ||f(x) - f_n(x)||_{\infty} < \varepsilon</script></blockquote>
+<p>下面对Weierstrass逼近定理进行证明。</p>
+<p>【<strong>引理1</strong>】如果函数$f_j(x)(j=1,…,J)$在$[a,b]$上可被多项式逼近，且$c_j\in \mathbb{R}(j=1,…,J)$，则$\sum_{j=1}^{J}{c_jf_j(x)}$在$[a,b]$上可被多项式逼近.</p>
+<p>由于$f_j(x)(j=1,…,J)$在$[a,b]$上可被多项式逼近，则有</p>
+<script type="math/tex; mode=display">
+\forall \varepsilon_j > 0,\exists P_j(x), ||f_j(x) - P_j(x)||_{\infty} < \varepsilon_j,j=1,...,J</script><p>因此对于$\sum_{j=1}^{J}{c_jf_j(x)}$，存在多项式$\sum_{j=1}^{J}{c_jP_j(x)}$，有</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+||\sum_{j=1}^{J}{c_jf_j(x)} - \sum_{j=1}^{J}{c_jP_j(x)}||_{\infty} &= ||\sum_{j=1}^{J}{c_j(f_j(x)-P_j(x))}||_{\infty} \\
+&\leq \sum_{j=1}^{J}{c_j||f_j(x)-P_j(x)||_{\infty}} \\
+&<\sum_{j=1}^{J}{c_j\varepsilon_j}
+\end{aligned}</script><p>Q.E.D.</p>
+<p>【<strong>引理2</strong>】如果函数序列$\{f_n(x)\}$满足$\forall n$，$f_n(x)$在$[a,b]$上可被多项式逼近，并且$f_n(x) \rightrightarrows f(x)$，则$f(x)$在$[a,b]$上可被多项式逼近.</p>
+<p>由于$f_n(x) \rightrightarrows f(x)$，则有</p>
+<script type="math/tex; mode=display">
+\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n > N, ||f(x)-f_n(x)||_{\infty} < \varepsilon</script><p>由于$\forall n$，$f_n(x)$在$[a,b]$上可被多项式逼近，因此$\forall n$，对于上述的$\varepsilon$，有</p>
+<script type="math/tex; mode=display">
+\exists P_n(x), ||f_n(x) - P_n(x)||_{\infty}<\varepsilon</script><p>因此，结合上述两者，有</p>
+<script type="math/tex; mode=display">
+\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n > N, ||f(x) - P_n(x)||_{\infty} \leq ||f(x) - f_n(x)||_{\infty} + ||f_n(x) - P_n(x)||_{\infty} < 2\varepsilon</script><p>Q.E.D.</p>
+<p>【<strong>引理3</strong>】$\forall c \in \mathbb{R}, \exists \{P_n(x)\}, s.t.P_n(x)\rightrightarrows|x-c|$，收敛半径为任意闭区间.</p>
+<p>首先需要承认如下两个事实。</p>
+<blockquote>
+<p>事实1：$(1+t)^{\alpha}$通过泰勒公式得到的幂级数展开式为$\sum_{n=0}^{\infty}{\begin{pmatrix}\alpha \\ n\end{pmatrix}t^n}$，其收敛半径为$[-1,1]$</p>
+<p>事实2：$f(x)$的幂级数展开式的部分和序列$\{S_n(x)\}$在收敛半径内一致收敛到$f(x)$</p>
+</blockquote>
+<p>基于事实1，可以有如下推导</p>
+<script type="math/tex; mode=display">
+|x|=[1+(x^2-1)]^{\frac{1}{2}}=\sum_{n=0}^{\infty}{\begin{pmatrix}\frac{1}{2} \\ n\end{pmatrix}(x^2-1)^n},-1\leq x\leq 1</script><p>基于事实2，如果令$\sum_{n=0}^{\infty}{\begin{pmatrix}\frac{1}{2} \\ n\end{pmatrix}(x^2-1)^n}$的部分序列和的序列为$\{S_n(x)\}$，那么应当有$S_n(x)\rightrightarrows |x|$。</p>
+<p>根据【引理2】，由于$\{S_n(x)\}$是多项式序列，因此$|x|$在$[-1,1]$上可被多项式逼近，即</p>
+<script type="math/tex; mode=display">
+\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n > N, ||f(x) - S_n(x)||_{\infty} < \varepsilon, \\
+s.t. \exists P(x) = S_n(x),||f(x) - P(x)||_{\infty} < \varepsilon</script><p>考虑从$\{S_n(x)\}$中挑选出新的序列$\{Q_n(x)\}$，使得序列$\{Q_n(x)\}$能够满足</p>
+<script type="math/tex; mode=display">
+||Q_n(x)-|x|||_{\infty} < \frac{1}{n^2}</script><p>这就是说，依次将$\varepsilon$设置为$\frac{1}{1},\frac{1}{4},\frac{1}{9},\frac{1}{16},…$，分别找到能够满足这些$\varepsilon$的$S_n(x)$，组成新的序列$\{Q_n(x)\}$。</p>
+<p>由此，构造$P_n(x) = nQ_n(\frac{x-c}{n})$，则有</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+||P_n(x) - |x-c|||_{\infty} &= ||nQ_n(\frac{x-c}{n})-|x-c|||_{\infty} \\
+&= n||(Q_n(\frac{x-c}{n})-|\frac{x-c}{n}|)||_{\infty} \\
+&< \frac{1}{n}
+\end{aligned}</script><p>因此，只要使$\frac{x-c}{n} \in [-1,1]$，即$x \in [c-n,c+n]$这一段区间能够覆盖特定区间$[A,B]$，即$n &gt; \max\{c-A,B-c\}$，就能够保证在任意闭区间$[A,B]$上，有</p>
+<script type="math/tex; mode=display">
+\forall \varepsilon > 0, \exists P(x) = P_{\max\{n, \frac{1}{\varepsilon}\}}(x),||P(x) - |x-c|||_{\infty} < \frac{1}{\max\{n, \frac{1}{\varepsilon}\}} < \varepsilon</script><p>Q.E.D.</p>
+<p>【<strong>引理4</strong>】$H(x)=\max\{x,0\}$在任意闭区间上可被多项式逼近.</p>
+<p>根据【引理2】和【引理3】，$|x|$在任意闭区间上可被多项式逼近。</p>
+<p>根据【引理1】，$H(x)=\frac{x+|x|}{2}$在任意闭区间上可被多项式逼近。</p>
+<p>Q.E.D.</p>
+<p>【<strong>引理5</strong>】如果$g(x)$在$[a,b]$上连续且分段线性，则$g(x)$可以表示为$g(x)=g(a)+\sum_{i=1}^{n}{c_iH(x-x_{i-1})}$，其中$x \in [a,b], c_i \in \mathbb{R}, i=1,2,…,n$</p>
+<blockquote>
+<p>对于$g(x) \in C[a,b]$，如果存在$[a,b]$的分割$\Delta:a=x_0 &lt; x_1 &lt; … &lt; x_n=b$，使得$g(x)$在$[x_{i-1}, x_{i}],i=1,2,…,n$均为线性函数，称$g(x)$在$[a,b]$上分段线性。</p>
+</blockquote>
+<p>显然。</p>
+<p>Q.E.D.</p>
+<p>【<strong>引理6</strong>】对于$f(x) \in C[a,b]$，存在分段线性函数序列$\{P_n(x)\}$使得$P_n(x) \rightrightarrows f(x)$.</p>
+<p>这一引理的一个充分条件是</p>
+<script type="math/tex; mode=display">
+\forall \varepsilon > 0, \exists \Delta:a=x_0 < x_1 < ... < x_n=b, \sum_{i=1}^{n}{\omega_i\Delta x_i} < \varepsilon</script><p>其中$\omega_i = \max_{x_{i-1} &lt; x &lt; x_i}{f(x)} - min_{x_{i-1} &lt; x &lt; x_i}{f(x)}$，$\Delta x_i = x_i - x_{i-1}$。</p>
+<p>这一充分条件在数学分析学科的定积分理论中是显然的，但为了保证博客的完整性，这里给出一个简要的证明。</p>
+<p>根据Cantor定理（一致连续性定理），$f(x)$在$[a,b]$上连续，则在$[a,b]$上一致连续，即</p>
+<script type="math/tex; mode=display">
+\forall \varepsilon > 0, \exists \delta > 0, \forall x^{\prime}, x^{\prime\prime} \in [a,b]且|x^{\prime} - x^{\prime\prime}| < \delta,则|f(x^{\prime}) - f(x^{\prime\prime})| < \varepsilon</script><p>不妨设$M_i = \max_{x_{i-1}\leq x\leq x_i}f(x) = f(x_{i}^{\prime}), m_i = \min_{x_{i-1}\leq x\leq x_i}f(x)=f(x_{i}^{\prime\prime})$，于是$\forall \varepsilon &gt; 0, \exists \delta &gt; 0, \forall \Delta:a=x_0 &lt; x_1 &lt; … &lt; x_n = b$满足$\lambda(\Delta) &lt; \delta$，则$\forall x_i^{\prime},x_i^{\prime\prime} \in [x_{i-1},x_i]$，有$|x_i^{\prime}-x_i^{\prime\prime}|&lt;\varepsilon$，从而$M_i - m_i &lt; \varepsilon$。其中$\lambda(\Delta)=\max_{1\leq i\leq n}(x_i - x_{i-1})$。</p>
+<p>观察到$\omega_i = M_i - m_i$，于是有</p>
+<script type="math/tex; mode=display">
+\sum_{i=1}^{n}{\omega_i \Delta x_i} = \sum_{i=1}^{n}{(M_i - m_i)\Delta x_i} < \varepsilon \sum_{i=1}^{n}{\Delta x_i} = (b-a)\varepsilon</script><p>Q.E.D.</p>
+<p>【<strong>Weierstrass逼近定理</strong>】闭区间上的连续函数$f(x)$可被多项式逼近.</p>
+<p>根据【引理6】，可以找到$[a,b]$上的一列分段线性函数$\{g_m(x)\}$，使得$g_m(x) \rightrightarrows f(x)$。</p>
+<p>根据【引理5】，对于分段线性函数$g_m(x)$，存在$[a,b]$的分割$\Delta_m:a=x_0^{(m)} &lt; x_1^{(m)} &lt; … &lt; x_n^{(m)}=b$，使得</p>
+<script type="math/tex; mode=display">
+g_m(x) = g_m(a) + \sum_{i=1}^{n_m}{c_i^{(m)}H(x-x_{i-1}^{(m)})}</script><p>根据【引理4】，$H(x-x_{i-1}^{(m)})$在$[a,b]$上可被多项式逼近。</p>
+<p>根据【引理1】，$g_m(x)$因此在$[a,b]$上也可被多项式逼近。</p>
+<p>根据【引理2】，$f(x)$在$[a,b]$上可被多项式逼近。</p>
+<p>Q.E.D.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fangzhi.site/b8709491b384.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar2.png">
+      <meta itemprop="name" content="方志">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="方志">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/b8709491b384.html" class="post-title-link" itemprop="url">数值分析学习笔记（一） 绪论</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-11-16 16:37:21" itemprop="dateCreated datePublished" datetime="2022-11-16T16:37:21+08:00">2022-11-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-17 00:55:23" itemprop="dateModified" datetime="2022-11-17T00:55:23+08:00">2022-11-17</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>数值分析是一门偏工程的数学分支学科，其基本思想是“近似”，就是说当原问题无法精确求解或者精确求解代价太高时，可以使用近似的方法在低开销的情况下获得尽可能精确的解。这样的解称之为数值解，得到这样的解的方法称之为数值解法。</p>
+<p>一般来说，一个好的数值解法应当符合如下评价标准：</p>
+<ul>
+<li>运算次数少</li>
+<li>运算过程具有规律性，便于编写程序</li>
+<li>需要记录的中间结果少</li>
+<li>能够控制误差的传播和积累，从而保证精度</li>
+</ul>
+<p>简而言之，好的数值解法应当既“快”又“准”，而在具体的应用场景下对于二者的要求标准不同，需要加以权衡。</p>
+<h3 id="如何衡量“快”：计算复杂性与收敛速度"><a href="#如何衡量“快”：计算复杂性与收敛速度" class="headerlink" title="如何衡量“快”：计算复杂性与收敛速度"></a>如何衡量“快”：计算复杂性与收敛速度</h3><p>算法大致可以分为两类：一类是直接法，指在没有误差的情况下可以在有限步内得到精确解的算法；另一类是迭代法，指采取逐次逼近的方法来逼近问题的精确解，而任意有限步内都得不到精确解的算法。</p>
+<p>对于<strong>直接法</strong>来说，运算量是衡量算法快慢的标志，而算法的计算复杂性则能够很好地估计算法的运算量。</p>
+<p>对于<strong>迭代法</strong>来说，除了要估计每一次迭代的运算量，还要估计迭代多少次才能将数值解逼近到足够的精度内，这就需要对其收敛速度进行分析。假设某一迭代法产生的序列$\{x_k\}$收敛于$x$，且存在某个正数$r \in [1,\infty)$，使得</p>
+<script type="math/tex; mode=display">
+\lim_{k \rightarrow \infty}\frac{||x_k-x||}{||x_{k-1}-x||^r}=c_r</script><p>存在，则称算法是$r$阶收敛的。</p>
+<ul>
+<li>当$r=1$时，称为线性收敛，此时必有$0 &lt; c_r &lt; 1$</li>
+<li>当$r=2$时，称为平方收敛</li>
+<li>当$r=3$时，称为立方收敛</li>
+</ul>
+<p>特别地，如果$lim_{k\rightarrow\infty}\frac{||x_k-x||}{||x_{k-1}-x||}=0$，称为超线性收敛，如果$r&gt;1$，则$r$阶收敛一定是超线性收敛。</p>
+<h3 id="如何衡量“准”：敏度分析与误差分析"><a href="#如何衡量“准”：敏度分析与误差分析" class="headerlink" title="如何衡量“准”：敏度分析与误差分析"></a>如何衡量“准”：敏度分析与误差分析</h3><p>在使用算法得到数值解后，需要评估其与精确解之间的差值有多少，要回答这一问题，需要进行敏度分析与误差分析。</p>
+<p><strong>敏度分析</strong>研究的是计算问题的固有属性对数值解精确度的影响，简单来说就是原始数据的微小变化会引起计算问题的数值解的多大变化。理想情况下，应当找到关系$g(\cdot)$，使得$f(x+\delta x) - f(x) = g(\delta x)$，然而找到这样的$g(\cdot)$是很困难的，通常的做法是：对于一个特定的$x$，在$\frac{|\delta x|}{|x|}$很小的情况下，找到一个尽可能小的正数$c(x)$使得</p>
+<script type="math/tex; mode=display">
+\frac{|f(x+\delta x) - f(x)|}{|f(x)|} \leq c(x)\frac{|\delta x|}{|x|}</script><p>这样$c(x)$的大小就在一定程度上反映了微小扰动在$x$点处对$f(\cdot)$的影响程度，$c(x)$称为$f(\cdot )$在$x$点处的条件数；可以看出，当$f(\cdot )$在$x$点处可微时，$c(x) \approx \frac{|f^{\prime}(x)||x|}{|f(x)|}$。当$c(x)$很大时，称$f(\cdot )$在$x$点处是病态的；当$c(x)$较小时，称$f(\cdot )$在$x$点处是良态的。需要注意的是，计算问题$f(\cdot )$是否病态是计算问题$f(\cdot )$的固有属性，与算法无关。</p>
+<p><strong>误差分析</strong>研究的是计算方法对数值解精确度的影响，具体来说，计算方法引起的数值解误差来源于以下四个方面。</p>
+<ul>
+<li>模型误差：从实际问题中提炼出的数学模型往往忽略许多次要因素，因此即使数学模型能够求出精确解，也与实际问题的真解不同，二者之差称为模型误差。模型误差常常是四类误差中的最大者。</li>
+<li>观测误差：原始数据是由观测、实验并记录获得的，由于各种实际因素的影响，原始数据本身带有一定误差，称之为观测误差。</li>
+<li>截断误差：理论上的精确值需要无限次运算才能获得，实际计算时使用有限次的运算结果来近似，这样的误差称为截断误差。</li>
+<li>舍入误差：计算机只能对有限位数字进行存储和运算，这样引起的误差称为舍入误差。</li>
+</ul>
+<p>对于这些误差，可以使用前向误差分析和后向误差分析两种误差分析方法进行处理。前向误差分析是指对于数值解$\hat{y}$和精确解$y$，估计误差$\delta y = \hat{y} - y$的过程；后向误差分析是指对于数值解$\hat{y}$，认为$\hat{y} = f(x + \delta x)$，估计$\delta x$如$|\delta x| \leq |x|\varepsilon$的过程。</p>
+<p>这样，通过对计算问题进行敏度分析以及对计算方法进行误差分析，可以对计算结果的精度进行如下估计。</p>
+<script type="math/tex; mode=display">
+\frac{|\hat{y}-f(x)|}{|f(x)|}=\frac{|f(x+\delta x)-f(x)|}{|f(x)|}\leq c(x)\frac{|\delta x|}{|x|} \leq c(x)\varepsilon</script><p>由此可见，只有使用数值稳定的计算方法（$\varepsilon$较小）来求解良态的计算问题（$c(x)$较小），才能得到可靠的计算结果。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fangzhi.site/e2cdae171593.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar2.png">
+      <meta itemprop="name" content="方志">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="方志">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/e2cdae171593.html" class="post-title-link" itemprop="url">爬虫简易教程（一）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-11-03 13:03:04" itemprop="dateCreated datePublished" datetime="2022-11-03T13:03:04+08:00">2022-11-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-12 16:43:42" itemprop="dateModified" datetime="2022-11-12T16:43:42+08:00">2022-11-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>最近室友沉迷上了收集种子文件，总是问我如何用爬虫爬取种子文件，授人以鱼不如授人以渔，今天就来写一下如何创建爬虫程序来爬取网页上自己需要的资源。</p>
+<p>爬虫程序的原理非常简单，一共分为三步：获取网页资源、筛选网页资源和保存网页资源。</p>
+<h3 id="获取网页资源"><a href="#获取网页资源" class="headerlink" title="获取网页资源"></a>获取网页资源</h3><p>获取网页资源是爬虫程序的核心部分，仅在这一步需要与服务器交互，一旦得到网页内容，后续步骤均在本地处理。</p>
+<p>为了获取网页资源，Python中常使用<code>requests</code>库和<code>urllib3</code>库，两者功能相似，这里仅对<code>requests</code>库加以介绍。</p>
+<p><code>requests</code>库中已经封装好了相应的方法，因此这里直接调用，以cnblogs为例进行爬取。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> request</span><br><span class="line">url = <span class="string">&#x27;https://www.cnblogs.com/&#x27;</span></span><br><span class="line">response = requests.get(url)</span><br></pre></td></tr></table></figure>
+<p>进一步对响应内容进行解析，可以采用如下代码。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">content = response.content.decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>这样就能够获取到cnblogs的页面内容了。为了加以验证，可以在浏览器中点击<code>F12</code>，在弹出的窗口中查看网页内容是否与获取到的内容一致，如果相一致说明获取页面内容成功。</p>
+<p><img src="1.png" alt=""></p>
+<h3 id="筛选网页资源"><a href="#筛选网页资源" class="headerlink" title="筛选网页资源"></a>筛选网页资源</h3><p>获取得到的网页内容往往非常繁杂，为了在其中提取我们感兴趣的内容，需要进行进一步筛选。一般来说，筛选使用到的工具称之为“选择器”，而常用的网页选择器有两种：<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/css_selectors.asp">css选择器</a>和<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/xpath/xpath_syntax.asp">xpath选择器</a>，点击链接可以参考两者的语法，本文不再赘述。</p>
+<p>两种网页选择器的原理都是将网页内容看作树形资源进行管理，每一块区域都看作树上的一个结点，均有其父结点，而最大的结点是<code>&lt;html&gt;</code>标签，代表整个网页区域。只要正确地按照选择器的语法给出筛选条件，就能够获取到自己感兴趣的区域内容。</p>
+<h4 id="唯一筛选内容"><a href="#唯一筛选内容" class="headerlink" title="唯一筛选内容"></a>唯一筛选内容</h4><p>如果想要获取的内容是唯一的，可以方便地使用浏览器自带的鼠标选择工具进行点选：在浏览器中使用<code>F12</code>，在弹出窗口的左上角点击鼠标样式的按钮，即可点选网页内容，或直接使用<code>ctrl+shift+c</code>进行点选。</p>
+<p><img src="2.png" alt=""></p>
+<p>点选自己感兴趣的区域，就能够获得对应的结点。在浏览器中对结点右键，在<code>Copy</code>中可以看到许多选项，其中<code>Copy selector</code>就是获得当前结点的css选择器的筛选条件，而<code>Copy Xpath</code>就是获得当前结点的xpath选择器的筛选条件。</p>
+<p><img src="3.png" alt=""></p>
+<p>例如，如果我想获得<code>【单元测试】JUnit 4 （四） --Junit4参数化</code>所在结点，可以使用如下代码获得。注意css选择器的<code>soup.select()</code>函数与xpath的<code>html.xpath()</code>函数均返回一个列表，在对结点进行进一步处理之前需要先从列表中取出。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># css选择器</span></span><br><span class="line"><span class="comment"># 需要安装beautifulsoup4库和lxml库</span></span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line">soup = BeautifulSoup(content, <span class="string">&#x27;lxml&#x27;</span>)</span><br><span class="line">node = soup.select(<span class="string">&#x27;#post_list &gt; article:nth-child(3) &gt; section &gt; div &gt; a&#x27;</span>)</span><br><span class="line"><span class="comment"># xpath选择器</span></span><br><span class="line"><span class="comment"># 需要安装lxml库</span></span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line">html = etree.HTML(content)</span><br><span class="line">node = html.xpath(<span class="string">&#x27;//*[@id=&quot;post_list&quot;]/article[2]/section/div/a&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>在获得正确的结点后，还需要正确提取结点中的内容。如果上述结点代表的是</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a <span class="keyword">class</span>=<span class="string">&quot;post-item-title&quot;</span> href=<span class="string">&quot;https://www.cnblogs.com/czzj/p/16845334.html&quot;</span> target=<span class="string">&quot;_blank&quot;</span>&gt;C<span class="comment"># 9.0 添加和增强的功能【基础篇】&lt;/a&gt;</span></span><br></pre></td></tr></table></figure>
+<p>那么如果想要获得结点中的属性内容或文本内容，可以通过如下代码实现。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># css选择器</span></span><br><span class="line">link = node[<span class="string">&#x27;href&#x27;</span>] <span class="comment"># 获得结点的href属性内容</span></span><br><span class="line">text = node.text <span class="comment"># 获得结点中的文本内容</span></span><br><span class="line"><span class="comment"># xpath选择器</span></span><br><span class="line">link = node.attrib[<span class="string">&#x27;href&#x27;</span>] <span class="comment"># 获得结点的href属性内容</span></span><br><span class="line">text = node.text <span class="comment"># 获得结点的文本内容</span></span><br></pre></td></tr></table></figure>
+<h4 id="批量筛选内容"><a href="#批量筛选内容" class="headerlink" title="批量筛选内容"></a>批量筛选内容</h4><p>如果获取的内容不唯一，并且存在一定规律，就可以通过正确设置选择器的筛选条件来批量筛选内容。</p>
+<p>与唯一筛选内容时不同，当批量筛选内容时，需要注意以下两点。</p>
+<p>第一，css选择器的<code>select</code>函数以及xpath选择器的<code>xpath</code>函数返回的都是符合当前筛选条件的结点列表。当唯一筛选内容时，筛选条件指定唯一结点，因此列表中只有一个元素，但是当批量筛选列表时，筛选条件指定批量结点，列表中存在多个元素，可以使用循环来批量处理。</p>
+<p>第二，css选择器构建的<code>soup</code>变量以及xpath选择器构建的<code>html</code>变量的本质都是当前网页内容的根节点，因此对于一些复杂的网页，可以先从<code>soup</code>或<code>html</code>筛选出中间结点<code>node</code>，再使用<code>node.select</code>或<code>node.html</code>进一步筛选。</p>
+<h3 id="保存网页资源"><a href="#保存网页资源" class="headerlink" title="保存网页资源"></a>保存网页资源</h3><p>筛选得到的网页内容往往拥有其特定含义，因此需要加以妥善保存。对于轻量级的网页内容，可以使用<code>pandas</code>库保存在<code>csv</code>文件中；对于重量级的网页内容，可以根据情况保存在不同的数据库中备用。</p>
+<h3 id="获取网页资源-进阶"><a href="#获取网页资源-进阶" class="headerlink" title="获取网页资源 - 进阶"></a>获取网页资源 - 进阶</h3><p>通常来说，大部分网页都拥有反爬虫措施，使用<code>requests</code>库难以爬取，需要添加headers伪装成浏览器访问，从而绕过网页的反爬虫措施并获取到正确的页面。同时，某些网站需要登录后才能显示内容页面，而html请求是不携带客户端状态信息的，因此需要添加cookies伪装成用户已登录的状态，从而获取到内容页面。</p>
+<p>这里提供一键生成Python爬虫请求头的网站<a target="_blank" rel="noopener" href="https://curlconverter.com/python/">链接</a>，具体操作如下</p>
+<ul>
+<li>在chrome浏览器的需要爬取的网页上，依次点击：右键、检查、Network、Doc</li>
+<li>刷新网页，会在Name中发现一列文件，选择其中的请求文件：右键、Copy、Copy as cURL(bash)</li>
+<li>打开一键生成网站，将复制的内容粘贴到curl command框中，在下方自动生成请求头</li>
+<li>复制请求头并粘贴到爬虫程序的合适位置</li>
+</ul>
+<p><img src="4.png" alt=""></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="方志"
+      src="/images/avatar2.png">
+  <p class="site-author-name" itemprop="name">方志</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">方志</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+    </div>
+  <!-- aplayer -->
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+</body>
+
+
+</html>
+
+<link rel="stylesheet" href="APlayer.min.css">
+<div id="aplayer"></div>
+<script src="APlayer.min.js"></script>
+

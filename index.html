@@ -220,6 +220,98 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fangzhi.site/c8a9cb10c609.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar2.png">
+      <meta itemprop="name" content="方志">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="方志">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/c8a9cb10c609.html" class="post-title-link" itemprop="url">插值多项式的存在性和唯一性证明</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-12-18 15:27:59 / 修改时间：17:59:34" itemprop="dateCreated datePublished" datetime="2022-12-18T15:27:59+08:00">2022-12-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一个插值逼近问题的一般性描述如下：</p>
+<p>对于定义在区间$[a,b]$中的一般函数$f(x)$，已知其在区间上$n+1$个不同点$x_0,x_1,…,x_n$处的函数值为</p>
+<script type="math/tex; mode=display">
+y_i = f(x_i),i=0,1,...,n</script><p>需要在区间$[a,b]$上求一个多项式$P(x)$，使得</p>
+<script type="math/tex; mode=display">
+P(x_i)=y_i,i=0,1,...,n</script><p>下述定理解决了插值多项式$P(x)$的存在性和唯一性。</p>
+<p>【<strong>定理</strong>】当$n+1$个插值节点$x_0,x_1,…,x_n$互不相同时，一定存在唯一的次数不超过$n$的多项式$P(x)$满足条件$P(x_i)=y_i$.</p>
+<p>不妨设</p>
+<script type="math/tex; mode=display">
+P(x) = a_nx^n+a_{n-1}x^{n-1}+...+a_0</script><p>由条件$P(x_i)=y_i$可以得到关于$a_n,a_{n-1},…,a_0$的线性代数方程组</p>
+<script type="math/tex; mode=display">
+a_nx_i^n+a_{n-1}x_i^{n-1}+...+a_0=y_i,i=0,1,...,n</script><p>其系数矩阵</p>
+<script type="math/tex; mode=display">
+X=\begin{pmatrix}
+x_0^n & x_0^{n-1} & \cdots & 1 \\
+x_1^n & x_1^{n-1} & \cdots & 1 \\
+\vdots & \vdots & \ddots & \vdots \\
+x_n^n & x_n^{n-1} & \cdots & 1 \\
+\end{pmatrix}</script><p>是一个$n+1$阶的Vandermonde矩阵。由于$x_0,x_1,…,x_n$互不相同，Vandermonde矩阵$X$是非奇异矩阵。由Cramer法则，由于关于$a_n,a_{n-1},…,a_0$的线性代数方程组的系数矩阵$X$是非奇异矩阵，因此该线性代数方程组存在唯一解，即</p>
+<script type="math/tex; mode=display">
+\begin{pmatrix}
+a_0 \\
+a_1 \\
+\vdots \\
+a_n
+\end{pmatrix}
+=X^{-1}
+\begin{pmatrix}
+y_0 \\
+y_1 \\
+\vdots \\
+y_n
+\end{pmatrix}</script><p>Q.E.D.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://fangzhi.site/1adef591a12f.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -815,7 +907,7 @@ g_m(x) = g_m(a) + \sum_{i=1}^{n_m}{c_i^{(m)}H(x-x_{i-1}^{(m)})}</script><p>根�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

@@ -220,6 +220,85 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fangzhi.site/d6a7410654b9.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar2.png">
+      <meta itemprop="name" content="方志">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="方志">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/d6a7410654b9.html" class="post-title-link" itemprop="url">两点三次Hermite插值的求解过程</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-12-22 17:21:54 / 修改时间：17:39:03" itemprop="dateCreated datePublished" datetime="2022-12-22T17:21:54+08:00">2022-12-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>两点三次Hermite插值是指：已知被插函数$f(x)$在区间$[x_0,x_1]$的两个端点的函数值和导数值为</p>
+<script type="math/tex; mode=display">
+y_0=f(x_0),y_1=f(x_1),m_0=f^{\prime}(0),m_1=f^{\prime}(x_1)</script><p>需要寻找一个三次多项式$H_3(x)$满足</p>
+<script type="math/tex; mode=display">
+H_3(x_0)=y_0,H_3(x_1)=y_1,H_3^{\prime}(x_0)=m_0,H_3^{\prime}(x_1)=m_1</script><p>记区间$[x_0,x_1]$上三次多项式空间为$\mathbb{P}_3$，首先求其一组基函数$\{\alpha_0,\alpha_1,\beta_0,\beta_1\}$在$[x_0,x_1]$上的表达式，使之满足</p>
+<script type="math/tex; mode=display">
+\begin{aligned}&\alpha_{0}(x_0)=1&&\alpha_1(x_0)=0&&\beta_0(x_0)=0&&\beta_1(x_0)=0&\\&\alpha_0(x_1)=0&&\alpha_1(x_1)=1&&\beta_0(x_1)=0&&\beta_1(x_1)=0&\\&\alpha_0^{\prime}(x_0)=0&&\alpha_1^{\prime}(x_0)=0&&\beta_0^{\prime}(x_0)=1&&\beta_1(x_0)=0&\\&\alpha_0^{\prime}(x_1)=0&&\alpha_1^{\prime}(x_1)=0&&\beta_0^{\prime}(x_1)=0&&\beta_1^{\prime}(x_1)=1&\end{aligned}</script><p>显然基函数一定都是三次多项式。</p>
+<p>由$\alpha_0(x_1)=0$和$\alpha_0^{\prime}(x_1)=0$，有$(x-x_1)^2 \mid \alpha_0(x)$，则$\alpha_0(x)=(ax+b)(x-x_1)^2$。</p>
+<p>由$\alpha_0(x_0)=1$，有$(ax_0+b)(x_0-x_1)^2=1$；由$\alpha_0^{\prime}(x_0)=0$，有$a(x_0-x_1)+2(ax+b)=0$。</p>
+<p>于是，$a=-\frac{2}{(x_0-x_1)^3},b=\frac{3x_0-x_1}{(x_0-x_1)^3}$，经调整后得</p>
+<script type="math/tex; mode=display">
+\alpha_0(x)=(1+2\frac{x-x_0}{x_1-x_0})(\frac{x-x_1}{x_0-x_1})^2=(1+2l_1(x))\cdot l_0^2(x)</script><p>同理有</p>
+<script type="math/tex; mode=display">
+\alpha_1(x) = (1+2\frac{x-x_1}{x_0-x_1})(\frac{x-x_0}{x_1-x_0})^2=(1+2l_0(x))\cdot l_1^2(x)</script><p>由$\beta_0(x_1)=0$和$\beta_0^{\prime}(x_1)=0$，有$(x-x_1)^2 \mid \beta_0(x)$；由$\beta_0(x_0) = 0$，有$(x-x_0) \mid \beta_0(x)$，因此有$\beta_0(x)=c(x-x_0)(x-x_1)^2$。</p>
+<p>由$\beta_0^{\prime}(x_0)=1$，有$c=\frac{1}{(x_0-x_1)^2}$，于是有</p>
+<script type="math/tex; mode=display">
+\beta_0(x)=(x-x_0)(\frac{x-x_1}{x_0-x_1})^2=(x-x_0)\cdot l_0^2(x)</script><p>同理有</p>
+<script type="math/tex; mode=display">
+\beta_1(x)=(x-x_1)(\frac{x-x_0}{x_1-x_0})^2=(x-x_1)\cdot l_1^2(x)</script><p>因此</p>
+<script type="math/tex; mode=display">
+H_3(x)=y_0\alpha_0(x)+y_1\alpha_1(x)+m_0\beta_0(x)+m_1\beta_1(x)</script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://fangzhi.site/c8a9cb10c609.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -907,7 +986,7 @@ g_m(x) = g_m(a) + \sum_{i=1}^{n_m}{c_i^{(m)}H(x-x_{i-1}^{(m)})}</script><p>根�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

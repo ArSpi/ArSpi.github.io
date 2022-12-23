@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"fangzhi.site","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Weierstrass逼近定理：闭区间上的连续函数可被多项式逼近，使用数学语言叙述如下。 对于在闭区间$[a,b]$上连续的$f(x)$，有  \forall \varepsilon &gt; 0, \exists P(x),s.t.||f(x)-P(x)||_{\infty} 0, \exists \{P_n(x)\},N,\forall n &gt; N, ||f(x)-P_n(x)||_{\infty}">
+  <meta name="description" content="（未完待续…） 三对角方程组是指系数形如  \begin{pmatrix} b_1 &amp; c_1    &amp;         &amp;         &amp;         \\ a_2 &amp; b_2    &amp; c_2     &amp;         &amp;         \\     &amp; \ddots &amp; \ddots  &amp; \ddots  &amp;         \\     &amp;        &amp; a_{n-1} &amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Weierstrass逼近定理证明">
-<meta property="og:url" content="https://fangzhi.site/7a6f0f31d6fa.html">
+<meta property="og:title" content="使用追赶法求解三对角方程组">
+<meta property="og:url" content="https://fangzhi.site/8eb8fe5533d4.html">
 <meta property="og:site_name" content="方志">
-<meta property="og:description" content="Weierstrass逼近定理：闭区间上的连续函数可被多项式逼近，使用数学语言叙述如下。 对于在闭区间$[a,b]$上连续的$f(x)$，有  \forall \varepsilon &gt; 0, \exists P(x),s.t.||f(x)-P(x)||_{\infty} 0, \exists \{P_n(x)\},N,\forall n &gt; N, ||f(x)-P_n(x)||_{\infty}">
+<meta property="og:description" content="（未完待续…） 三对角方程组是指系数形如  \begin{pmatrix} b_1 &amp; c_1    &amp;         &amp;         &amp;         \\ a_2 &amp; b_2    &amp; c_2     &amp;         &amp;         \\     &amp; \ddots &amp; \ddots  &amp; \ddots  &amp;         \\     &amp;        &amp; a_{n-1} &amp;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-17T02:56:46.000Z">
-<meta property="article:modified_time" content="2022-11-18T07:34:46.777Z">
+<meta property="article:published_time" content="2022-12-23T10:26:51.000Z">
+<meta property="article:modified_time" content="2022-12-23T12:40:18.641Z">
 <meta property="article:author" content="方志">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://fangzhi.site/7a6f0f31d6fa.html">
+<link rel="canonical" href="https://fangzhi.site/8eb8fe5533d4.html">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>Weierstrass逼近定理证明 | 方志</title>
+  <title>使用追赶法求解三对角方程组 | 方志</title>
   
 
 
@@ -151,7 +151,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://fangzhi.site/7a6f0f31d6fa.html">
+    <link itemprop="mainEntityOfPage" href="https://fangzhi.site/8eb8fe5533d4.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar2.png">
@@ -164,7 +164,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Weierstrass逼近定理证明
+          使用追赶法求解三对角方程组
         </h1>
 
         <div class="post-meta">
@@ -173,16 +173,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-11-17 10:56:46" itemprop="dateCreated datePublished" datetime="2022-11-17T10:56:46+08:00">2022-11-17</time>
+              <time title="创建时间：2022-12-23 18:26:51 / 修改时间：20:40:18" itemprop="dateCreated datePublished" datetime="2022-12-23T18:26:51+08:00">2022-12-23</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-11-18 15:34:46" itemprop="dateModified" datetime="2022-11-18T15:34:46+08:00">2022-11-18</time>
-              </span>
 
           
 
@@ -195,88 +189,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Weierstrass逼近定理：闭区间上的连续函数可被多项式逼近，使用数学语言叙述如下。</p>
-<p>对于在闭区间$[a,b]$上连续的$f(x)$，有</p>
+        <p>（未完待续…）</p>
+<p>三对角方程组是指系数形如</p>
 <script type="math/tex; mode=display">
-\forall \varepsilon > 0, \exists P(x),s.t.||f(x)-P(x)||_{\infty}<\varepsilon</script><p>其中$||f(x) - P(x)||_{\infty} = \max_{a \leq x \leq b}{|f(x) - P(x)|}$</p>
-<p>显然，“$f(x)$可被多项式逼近”与“存在多项式序列一致收敛到$f(x)$”互为充分必要条件，后者叙述如下。</p>
-<script type="math/tex; mode=display">
-\forall \varepsilon > 0, \exists \{P_n(x)\},N,\forall n > N, ||f(x)-P_n(x)||_{\infty}<\varepsilon</script><blockquote>
-<p>这里补充一致收敛的定义：</p>
-<script type="math/tex; mode=display">
-f_n(x) \rightrightarrows f(x) \Longleftrightarrow \forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n > N, ||f(x) - f_n(x)||_{\infty} < \varepsilon</script></blockquote>
-<p>下面对Weierstrass逼近定理进行证明。</p>
-<p>【<strong>引理1</strong>】如果函数$f_j(x)(j=1,…,J)$在$[a,b]$上可被多项式逼近，且$c_j\in \mathbb{R}(j=1,…,J)$，则$\sum_{j=1}^{J}{c_jf_j(x)}$在$[a,b]$上可被多项式逼近.</p>
-<p>由于$f_j(x)(j=1,…,J)$在$[a,b]$上可被多项式逼近，则有</p>
-<script type="math/tex; mode=display">
-\forall \varepsilon_j > 0,\exists P_j(x), ||f_j(x) - P_j(x)||_{\infty} < \varepsilon_j,j=1,...,J</script><p>因此对于$\sum_{j=1}^{J}{c_jf_j(x)}$，存在多项式$\sum_{j=1}^{J}{c_jP_j(x)}$，有</p>
+\begin{pmatrix}
+b_1 & c_1    &         &         &         \\
+a_2 & b_2    & c_2     &         &         \\
+    & \ddots & \ddots  & \ddots  &         \\
+    &        & a_{n-1} & b_{n-1} & c_{n-1} \\
+    &        &         & a_n     & b_n
+\end{pmatrix}</script><p>的方程组。当系数矩阵是严格对角占优矩阵时，即满足</p>
 <script type="math/tex; mode=display">
 \begin{aligned}
-||\sum_{j=1}^{J}{c_jf_j(x)} - \sum_{j=1}^{J}{c_jP_j(x)}||_{\infty} &= ||\sum_{j=1}^{J}{c_j(f_j(x)-P_j(x))}||_{\infty} \\
-&\leq \sum_{j=1}^{J}{c_j||f_j(x)-P_j(x)||_{\infty}} \\
-&<\sum_{j=1}^{J}{c_j\varepsilon_j}
-\end{aligned}</script><p>Q.E.D.</p>
-<p>【<strong>引理2</strong>】如果函数序列$\{f_n(x)\}$满足$\forall n$，$f_n(x)$在$[a,b]$上可被多项式逼近，并且$f_n(x) \rightrightarrows f(x)$，则$f(x)$在$[a,b]$上可被多项式逼近.</p>
-<p>由于$f_n(x) \rightrightarrows f(x)$，则有</p>
-<script type="math/tex; mode=display">
-\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n > N, ||f(x)-f_n(x)||_{\infty} < \varepsilon</script><p>由于$\forall n$，$f_n(x)$在$[a,b]$上可被多项式逼近，因此$\forall n$，对于上述的$\varepsilon$，有</p>
-<script type="math/tex; mode=display">
-\exists P_n(x), ||f_n(x) - P_n(x)||_{\infty}<\varepsilon</script><p>因此，结合上述两者，有</p>
-<script type="math/tex; mode=display">
-\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n > N, ||f(x) - P_n(x)||_{\infty} \leq ||f(x) - f_n(x)||_{\infty} + ||f_n(x) - P_n(x)||_{\infty} < 2\varepsilon</script><p>Q.E.D.</p>
-<p>【<strong>引理3</strong>】$\forall c \in \mathbb{R}, \exists \{P_n(x)\}, s.t.P_n(x)\rightrightarrows|x-c|$，收敛半径为任意闭区间.</p>
-<p>首先需要承认如下两个事实。</p>
-<blockquote>
-<p>事实1：$(1+t)^{\alpha}$通过泰勒公式得到的幂级数展开式为$\sum_{n=0}^{\infty}{\begin{pmatrix}\alpha \\ n\end{pmatrix}t^n}$，其收敛半径为$[-1,1]$</p>
-<p>事实2：$f(x)$的幂级数展开式的部分和序列$\{S_n(x)\}$在收敛半径内一致收敛到$f(x)$</p>
-</blockquote>
-<p>基于事实1，可以有如下推导</p>
-<script type="math/tex; mode=display">
-|x|=[1+(x^2-1)]^{\frac{1}{2}}=\sum_{n=0}^{\infty}{\begin{pmatrix}\frac{1}{2} \\ n\end{pmatrix}(x^2-1)^n},-1\leq x\leq 1</script><p>基于事实2，如果令$\sum_{n=0}^{\infty}{\begin{pmatrix}\frac{1}{2} \\ n\end{pmatrix}(x^2-1)^n}$的部分序列和的序列为$\{S_n(x)\}$，那么应当有$S_n(x)\rightrightarrows |x|$。</p>
-<p>根据【引理2】，由于$\{S_n(x)\}$是多项式序列，因此$|x|$在$[-1,1]$上可被多项式逼近，即</p>
-<script type="math/tex; mode=display">
-\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n > N, ||f(x) - S_n(x)||_{\infty} < \varepsilon, \\
-s.t. \exists P(x) = S_n(x),||f(x) - P(x)||_{\infty} < \varepsilon</script><p>考虑从$\{S_n(x)\}$中挑选出新的序列$\{Q_n(x)\}$，使得序列$\{Q_n(x)\}$能够满足</p>
-<script type="math/tex; mode=display">
-||Q_n(x)-|x|||_{\infty} < \frac{1}{n^2}</script><p>这就是说，依次将$\varepsilon$设置为$\frac{1}{1},\frac{1}{4},\frac{1}{9},\frac{1}{16},…$，分别找到能够满足这些$\varepsilon$的$S_n(x)$，组成新的序列$\{Q_n(x)\}$。</p>
-<p>由此，构造$P_n(x) = nQ_n(\frac{x-c}{n})$，则有</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-||P_n(x) - |x-c|||_{\infty} &= ||nQ_n(\frac{x-c}{n})-|x-c|||_{\infty} \\
-&= n||(Q_n(\frac{x-c}{n})-|\frac{x-c}{n}|)||_{\infty} \\
-&< \frac{1}{n}
-\end{aligned}</script><p>因此，只要使$\frac{x-c}{n} \in [-1,1]$，即$x \in [c-n,c+n]$这一段区间能够覆盖特定区间$[A,B]$，即$n &gt; \max\{c-A,B-c\}$，就能够保证在任意闭区间$[A,B]$上，有</p>
-<script type="math/tex; mode=display">
-\forall \varepsilon > 0, \exists P(x) = P_{\max\{n, \frac{1}{\varepsilon}\}}(x),||P(x) - |x-c|||_{\infty} < \frac{1}{\max\{n, \frac{1}{\varepsilon}\}} < \varepsilon</script><p>Q.E.D.</p>
-<p>【<strong>引理4</strong>】$H(x)=\max\{x,0\}$在任意闭区间上可被多项式逼近.</p>
-<p>根据【引理2】和【引理3】，$|x|$在任意闭区间上可被多项式逼近。</p>
-<p>根据【引理1】，$H(x)=\frac{x+|x|}{2}$在任意闭区间上可被多项式逼近。</p>
-<p>Q.E.D.</p>
-<p>【<strong>引理5</strong>】如果$g(x)$在$[a,b]$上连续且分段线性，则$g(x)$可以表示为$g(x)=g(a)+\sum_{i=1}^{n}{c_iH(x-x_{i-1})}$，其中$x \in [a,b], c_i \in \mathbb{R}, i=1,2,…,n$</p>
-<blockquote>
-<p>对于$g(x) \in C[a,b]$，如果存在$[a,b]$的分割$\Delta:a=x_0 &lt; x_1 &lt; … &lt; x_n=b$，使得$g(x)$在$[x_{i-1}, x_{i}],i=1,2,…,n$均为线性函数，称$g(x)$在$[a,b]$上分段线性。</p>
-</blockquote>
-<p>显然。</p>
-<p>Q.E.D.</p>
-<p>【<strong>引理6</strong>】对于$f(x) \in C[a,b]$，存在分段线性函数序列$\{P_n(x)\}$使得$P_n(x) \rightrightarrows f(x)$.</p>
-<p>这一引理的一个充分条件是</p>
-<script type="math/tex; mode=display">
-\forall \varepsilon > 0, \exists \Delta:a=x_0 < x_1 < ... < x_n=b, \sum_{i=1}^{n}{\omega_i\Delta x_i} < \varepsilon</script><p>其中$\omega_i = \max_{x_{i-1} &lt; x &lt; x_i}{f(x)} - min_{x_{i-1} &lt; x &lt; x_i}{f(x)}$，$\Delta x_i = x_i - x_{i-1}$。</p>
-<p>这一充分条件在数学分析学科的定积分理论中是显然的，但为了保证博客的完整性，这里给出一个简要的证明。</p>
-<p>根据Cantor定理（一致连续性定理），$f(x)$在$[a,b]$上连续，则在$[a,b]$上一致连续，即</p>
-<script type="math/tex; mode=display">
-\forall \varepsilon > 0, \exists \delta > 0, \forall x^{\prime}, x^{\prime\prime} \in [a,b]且|x^{\prime} - x^{\prime\prime}| < \delta,则|f(x^{\prime}) - f(x^{\prime\prime})| < \varepsilon</script><p>不妨设$M_i = \max_{x_{i-1}\leq x\leq x_i}f(x) = f(x_{i}^{\prime}), m_i = \min_{x_{i-1}\leq x\leq x_i}f(x)=f(x_{i}^{\prime\prime})$，于是$\forall \varepsilon &gt; 0, \exists \delta &gt; 0, \forall \Delta:a=x_0 &lt; x_1 &lt; … &lt; x_n = b$满足$\lambda(\Delta) &lt; \delta$，则$\forall x_i^{\prime},x_i^{\prime\prime} \in [x_{i-1},x_i]$，有$|x_i^{\prime}-x_i^{\prime\prime}|&lt;\varepsilon$，从而$M_i - m_i &lt; \varepsilon$。其中$\lambda(\Delta)=\max_{1\leq i\leq n}(x_i - x_{i-1})$。</p>
-<p>观察到$\omega_i = M_i - m_i$，于是有</p>
-<script type="math/tex; mode=display">
-\sum_{i=1}^{n}{\omega_i \Delta x_i} = \sum_{i=1}^{n}{(M_i - m_i)\Delta x_i} < \varepsilon \sum_{i=1}^{n}{\Delta x_i} = (b-a)\varepsilon</script><p>Q.E.D.</p>
-<p>【<strong>Weierstrass逼近定理</strong>】闭区间上的连续函数$f(x)$可被多项式逼近.</p>
-<p>根据【引理6】，可以找到$[a,b]$上的一列分段线性函数$\{g_m(x)\}$，使得$g_m(x) \rightrightarrows f(x)$。</p>
-<p>根据【引理5】，对于分段线性函数$g_m(x)$，存在$[a,b]$的分割$\Delta_m:a=x_0^{(m)} &lt; x_1^{(m)} &lt; … &lt; x_n^{(m)}=b$，使得</p>
-<script type="math/tex; mode=display">
-g_m(x) = g_m(a) + \sum_{i=1}^{n_m}{c_i^{(m)}H(x-x_{i-1}^{(m)})}</script><p>根据【引理4】，$H(x-x_{i-1}^{(m)})$在$[a,b]$上可被多项式逼近。</p>
-<p>根据【引理1】，$g_m(x)$因此在$[a,b]$上也可被多项式逼近。</p>
-<p>根据【引理2】，$f(x)$在$[a,b]$上可被多项式逼近。</p>
-<p>Q.E.D.</p>
+&|b_1| > |c_1| > 0 \\
+&|b_i| > |c_i| + |a_i| \\
+&|b_n| > |a_n| > 0
+\end{aligned}</script><p>时，可以使用追赶法求解方程组。</p>
 
     </div>
 
@@ -292,12 +220,12 @@ g_m(x) = g_m(a) + \sum_{i=1}^{n_m}{c_i^{(m)}H(x-x_{i-1}^{(m)})}</script><p>根�
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/b8709491b384.html" rel="prev" title="数值分析学习笔记（一） 绪论">
-      <i class="fa fa-chevron-left"></i> 数值分析学习笔记（一） 绪论
+    <a href="/d6a7410654b9.html" rel="prev" title="两点三次Hermite插值的求解过程">
+      <i class="fa fa-chevron-left"></i> 两点三次Hermite插值的求解过程
     </a></div>
       <div class="post-nav-item">
-    <a href="/1adef591a12f.html" rel="next" title="vscode中调试python程序：launch.json文件">
-      vscode中调试python程序：launch.json文件 <i class="fa fa-chevron-right"></i>
+    <a href="/3441e41d3bdd.html" rel="next" title="数值分析学习笔记（二） 函数的多项式插值与逼近">
+      数值分析学习笔记（二） 函数的多项式插值与逼近 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
